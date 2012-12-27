@@ -1,10 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-#define N 10
-
-static int COUNT = 0;
+#include "ordenacao.h"
 
 /************ Funções auxiliares **************/
 
@@ -25,9 +19,11 @@ int* geraVetor () {
   return geraVetor(N);
 }
 
-/* TODO usar ponteiros! */
-void copy_values (int* origem, int* destino, int size) {
+/* TODO tentar com ponteiros, warning */
+void copiaValores (int* origem, int* destino, int size) {
   int i;
+
+  destino = (int*) malloc (size * sizeof(int));
 
   for (i = 0; i < size; i++) {
     destino[i] = origem[i];
@@ -125,29 +121,32 @@ int* intercala (int* vetorE, int* vetorD, int sizeE, int sizeD) {
 
   ordenado = (int*) malloc ((sizeE + sizeD) * sizeof(int));
 
-  imprimeVetor(vetorE, sizeE, "vetorE");
-  imprimeVetor(vetorD, sizeD, "vetorD");
+  #ifdef DEBUG
+    imprimeVetor(vetorE, sizeE, "vetorE");
+    imprimeVetor(vetorD, sizeD, "vetorD");
+  #endif
 
   for (k = 0, i = 0, j = 0; i < sizeE && j < sizeD; ) {
-
     if (vetorE[i] < vetorD[j])
       ordenado[k++] = vetorE[i++];
     else
       ordenado[k++] = vetorD[j++];
   }
 
-  for (; i < sizeE; )
+  while (i < sizeE)
     ordenado[k++] = vetorE[i++];
 
-  for (; j < sizeD; )
+  while (j < sizeD)
     ordenado[k++] = vetorD[j++];
 
-  imprimeVetor(ordenado, sizeE+sizeD, "intercalado");
-  printf("vez=%d\n\n", COUNT++);
+  #ifdef DEBUG
+    imprimeVetor(ordenado, sizeE+sizeD, "intercalado");
+    printf("vez=%d\n\n", COUNT++);
+  #endif
+
   return ordenado;
 }
 
-/** TODO analisar melhor algoritmo, mtos a esquerda */
 int* mergeSort (int* vetor, int r, int q) {
   int meio;
   int* esq, *dir, *ordenado;
@@ -168,31 +167,22 @@ int* mergeSort (int* vetor, int r, int q) {
   return ordenado;
 }
 
-void ordenaVetor (int* vetor, int size) {
+void ordenaVetor (int* vetor, int size, int algoritmo) {
+  switch (algoritmo) {
+    case 1:
+      fakeSort (vetor, size);
+      break;
+    
+    case 2:
+      bubbleSort (vetor, size);
+      break;
 
-  // fakeSort(vetor, size);
-  // bubbleSort(vetor, size);
-  // quickSort(vetor, 0, size-1);
-  copy_values ( mergeSort (vetor, 0, size-1), vetor, size);
+    case 3:
+      quickSort (vetor, 0, size-1);
+      break;
 
+    default:
+      copiaValores (mergeSort (vetor, 0, size-1), vetor, size);
+      break;
+  }
 }
-
-void ordenaVetor (int* vetor) {
-  ordenaVetor (vetor, N);
-}
-
-/************ Rotina principal **************/
-
-int main (int arg, char* argv[]) {
-  int* numbers;
-  int i;
- 
-  numbers = geraVetor();
-
-  imprimeVetor (numbers, "Inicial");
-  ordenaVetor (numbers);
-  imprimeVetor (numbers, "Mergesort");
-
-  free (numbers);
-}
-
