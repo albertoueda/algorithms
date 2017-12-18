@@ -1,6 +1,7 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-04
+   https://www.urionlinejudge.com.br/judge/pt/problems/view/1478
 */
 #include <iostream>
 #include <iomanip>

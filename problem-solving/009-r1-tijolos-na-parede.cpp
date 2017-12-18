@@ -1,7 +1,11 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-04
+
+ https://www.urionlinejudge.com.br/judge/pt/problems/view/1426 
+ O problema que você deve resolver consiste em rotular os tijolos em branco com números, de tal forma que a seguinte regra seja satisfeita: O número de um tijolo é igual à soma dos números dos dois tijolos abaixo dele
 */
+
 #include <iostream>
 #include <iomanip>
 using namespace std;

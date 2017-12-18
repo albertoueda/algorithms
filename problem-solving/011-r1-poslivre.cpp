@@ -1,7 +1,13 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-06
+ 
+ http://br.spoj.com/problems/POSLIVRE/
+ 
+ POSLIVRE - Posições Livres
+ Escreva um programa que, dado um tabuleiro e uma lista de sub-partes retangulares do tabuleiro, retorna o número de posições que não pertencem a nenhuma sub-parte.
 */
+
 #include <iostream>
 using namespace std;
 

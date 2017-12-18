@@ -1,7 +1,13 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-08-31
+
+ http://br.spoj.com/problems/MINHOCA/
+
+ MINHOCA - Campo de Minhocas
+ Escreva um programa que, fornecido o mapa do campo de minhocas, descrevendo a produtividade estimada em cada célula, calcule o número esperado total de minhocas a serem colhidas pela máquina durante o teste, conforme descrito acima.
 */
+
 #include <iostream>
 #include <string.h>
 #include <math.h>

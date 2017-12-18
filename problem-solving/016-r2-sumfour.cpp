@@ -1,6 +1,10 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-15
+
+  http://www.spoj.com/problems/SUMFOUR/
+
+  The SUM problem can be formulated as follows: given four lists A, B, C, D of integer values, compute how many quadruplet (a, b, c, d ) belongs to A x B x C x D are such that a + b + c + d = 0
 */
 #include <iostream>
 #include <vector>

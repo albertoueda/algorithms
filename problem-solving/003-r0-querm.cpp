@@ -1,7 +1,13 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-08-31
+
+http://br.spoj.com/problems/QUERM/
+
+ QUERM - Quermesse
+ Conhecendo a lista de participantes, por ordem de chegada, sua tarefa é determinar o número do ingresso premiado, sabendo que o ganhador é o único participante que tem o número do ingresso igual à sua posição de entrada na festa.
 */
+
 #include <iostream>
 #include <string.h>
 #include <math.h>

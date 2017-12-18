@@ -1,6 +1,10 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-07
+
+ http://br.spoj.com/problems/BRACELMG/
+ 
+ Para cada caso de teste, imprima uma linha contendo S se a sequência proibida está presente naquele bracelete e N se ela não está presente.
 */
 #include <iostream>
 using namespace std;

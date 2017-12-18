@@ -1,6 +1,10 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-09
+
+  http://br.spoj.com/problems/JASPION/
+
+  dado um dicionário Japonês-Português e uma letra de música, escreva um programa que imprima a letra traduzida.  
 */
 #include <iostream>
 #include <sstream>

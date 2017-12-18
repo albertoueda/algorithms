@@ -1,7 +1,12 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-13
+
+ http://br.spoj.com/problems/FUTEBOL/
+
+ Escreva um programa que, dados os resultados de um campeonato de futebol, imprime a classificação correspondente seguindo o formato especificado.
 */
+
 #include <iostream>
 #include <string>
 #include <unordered_map>

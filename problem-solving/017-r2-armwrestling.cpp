@@ -1,6 +1,10 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-16
+
+ https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=3061
+
+ Given the initial strength of all contestants, determine who will win the tournament and which contestant he will beat.
 */
 #include <iostream>
 #include <vector>

@@ -24,8 +24,6 @@ typedef pair<int,int> ii;
 #define present(c,x) ((c).find(x) != (c).end()) 
 #define cpresent(c,x) (find(all(c),x) != (c).end()) 
 
-// #define all(v) v.begin(), v.end()
-
 // Compilation Error: 'typeof' (GNU) is not recognized
 // #define tr(c, it) for(__typeof__((c).begin()) it = (c).begin(); it != (c).end(); it++)
 
@@ -106,9 +104,9 @@ int main() {
 	cout << "s = study --> s.substr(2) = " << s.substr(2);
 	cout << " and s.substr(2,1) = " << s.substr(2,1) << endl;
 
-		// be careful!
-		unsigned z = 0;
-		cout << z - 1 << endl;
+	// be careful!
+	unsigned z = 0;
+	cout << z - 1 << endl;
 
 	// set --> removal of duplicates and sort trick
 	int numbers[] = {3, 2, 1, 1, 10, 5};

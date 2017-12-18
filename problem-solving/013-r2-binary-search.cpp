@@ -1,6 +1,8 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-09
+
+  http://www.spoj.com/problems/BSEARCH1/
 */
 #include <iostream>
 #include <stdio.h>

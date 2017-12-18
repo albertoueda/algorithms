@@ -1,6 +1,10 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-08-31
+
+ http://br.spoj.com/problems/COPA1/
+ Dados os resultados dos quinze jogos da Fase final, escreva um programa que determine a equipe campeã.
+
 */
 #include <iostream>
 #include <string.h>

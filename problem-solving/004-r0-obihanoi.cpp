@@ -1,7 +1,13 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-08-31
+
+ http://br.spoj.com/problems/OBIHANOI/
+
+ OBIHANOI - Torres de Hanói
+ Sua tarefa é escrever um programa que determine quantos movimentos de trocar um disco de um pino para outro serão executados pelo algoritmo acima para resolver o quebra-cabeça.
 */
+
 #include <iostream>
 #include <string.h>
 #include <math.h>

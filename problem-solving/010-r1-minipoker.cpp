@@ -1,6 +1,7 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-05
+   http://br.spoj.com/problems/OBIPOKER/
 */
 #include <iostream>
 #include <algorithm>

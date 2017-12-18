@@ -1,6 +1,10 @@
 /*
  * Alberto Ueda - DCC/UFMG
  * 2017-09-17
+
+ http://br.spoj.com/problems/MARIO/
+
+ Mário está muito ocupado com seus clientes e pediu que você fizesse um programa para determinar o número mínimo de trocas necessário para satisfazer o pedido de locação de um novo cliente.
 */
 #include <iostream>
 #include <vector>
