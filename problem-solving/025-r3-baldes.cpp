@@ -76,7 +76,7 @@ int main_nlogn()
 	}
 }
 
-// Accepted. O(n)
+// Also accepted. O(n)
 int main() 
 {
 	while(true) {
@@ -93,7 +93,7 @@ int main()
 
 		long long invs = 0;
 
-		for (int k = 1; k <= n; k++) {
+		for (int k = 1; k < n+1; k++) {
 
 			if (a[k] == k)
 				continue;
